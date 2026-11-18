@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Tomi Juice — Sparkling Mango, Cranberry &amp; Orange</title>
+  <meta name="description" content="Packed with natural flavors and a sparkling kick, Tomi is the perfect companion to compliment your day. Mango, Cranberry and Orange flavoured sparkling drinks." />
+  <meta name="theme-color" content="#0B3FC0" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Fraunces:ital,opsz,wght@1,9..144,600..900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/tex/label-mango.jpg" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#intro">Skip the flavour experience</a>
+  <!-- one fixed 3D stage for the whole page: hero, the travelling can, and the footer pour -->
+  <canvas class="stage" aria-hidden="true"></canvas>
+
+  <header class="nav" data-nav>
+    <a class="nav__logo" href="#top" aria-label="Tomi Juice home"><img src="/img/tomi-logo.webp" alt="tomi" width="120" height="70" /></a>
+    <nav class="nav__links glass" aria-label="Main">
+      <a href="#top" class="is-active">Home</a>
+      <a href="#flavours">Flavours</a>
+      <a href="#story">Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#order">Order</a>
+    </nav>
+    <a class="btn btn--dark nav__cta" href="#order">Order now</a>
+  </header>
+
+  <main id="top">
+    <!-- ───────────── PINNED THREE-FLAVOUR HERO ───────────── -->
+    <section class="hero" id="hero" aria-label="Tomi flavour experience">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__words" aria-hidden="true">
+        <span class="hero__word" data-i="0">Mango</span>
+        <span class="hero__word" data-i="1">Cranberry</span>
+        <span class="hero__word" data-i="2">Orange</span>
+      </div>
+      <div class="hero__fallback" aria-hidden="true"><img src="/img/trio.webp" alt="" /></div>
+
+      <div class="hero__copy" data-copies></div>
+
+      <div class="hero__picker glass" role="tablist" aria-label="Choose a flavour" data-picker></div>
+
+      <div class="hero__meta">
+        <div class="hero__count"><span data-count>01</span><i></i><span>03</span></div>
+        <div class="hero__scroll"><span class="hero__mouse"></span>Scroll to taste</div>
+      </div>
+    </section>
+
+    <!-- ───────────── BRAND INTRO ───────────── -->
+    <section class="intro" id="intro">
+      <p class="eyebrow">#tomitime</p>
+      <h2 class="intro__statement" data-split>
+        Packed with natural flavors and a <em>sparkling kick</em>, Tomi is the perfect companion to complement your day.
+      </h2>
+      <div class="intro__trio" data-reveal>
+        <img src="/img/fresh-vibes.webp" alt="Tomi Mango, Cranberry and Orange cans on a blue and yellow sunburst — Fresh vibes, Fresh Flavours" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ───────────── FLAVOURS ───────────── -->
+    <section class="flavours" id="flavours">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">The line-up</p>
+        <h2>Three flavours.<br /><em>One sparkle.</em></h2>
+      </header>
+      <div class="flavours__grid" data-flavour-cards></div>
+    </section>
+
+    <!-- ───────────── PRODUCT EXPERIENCE ───────────── -->
+    <section class="experience" id="experience">
+      <div class="experience__media" data-parallax>
+        <img src="/img/same-quality.webp" alt="Hands holding Tomi Cranberry, Mango and Orange cans through a door — Different flavours, same quality taste" loading="lazy" />
+      </div>
+      <div class="experience__text" data-reveal>
+        <p class="eyebrow">Product experience</p>
+        <h2>Different flavours,<br /><em>same quality taste.</em></h2>
+        <p>Every Tomi can carries the same sparkling character — whichever flavour you reach for. Chill it, crack it, and make it #tomitime.</p>
+        <ul class="chips">
+          <li>Sparkling</li><li>Flavoured drink</li><li>Served chilled</li>
+        </ul>
+      </div>
+      <div class="experience__stack" data-parallax-alt>
+        <img src="/img/ice-bucket.webp" alt="A hand lifting an ice-cold Tomi Mango can from an ice bucket full of Tomi cans" loading="lazy" />
+        <img src="/img/quad.webp" alt="Tomi Mango, Orange and Cranberry cans with fresh fruit on colour-blocked backgrounds" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ───────────── BRAND STORY ───────────── -->
+    <section class="story" id="story">
+      <div class="story__inner">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Brand story</p>
+          <h2>Fresh vibes.<br /><em>Fresh flavours.</em></h2>
+        </header>
+        <div class="story__grid">
+          <article class="story__card" data-reveal>
+            <span class="story__num">01</span>
+            <h3>Made for your day</h3>
+            <p>Tomi was made to be the companion to your day — a sparkling lift at the desk, in your tote, or straight from the ice bucket.</p>
+          </article>
+          <article class="story__card" data-reveal>
+            <span class="story__num">02</span>
+            <h3>Out with the community</h3>
+            <p>From events and brand activations to contests like Scratch &amp; Win and the Tomi Cocktail Contest — Tomi shows up where the fun is.</p>
+          </article>
+          <article class="story__card" data-reveal>
+            <span class="story__num">03</span>
+            <h3>Join #tomitime</h3>
+            <p>Thousands of fans follow the fizz on Instagram. Share your Tomi moment and tag <a href="https://www.instagram.com/tomi.juice/" target="_blank" rel="noopener">@tomi.juice</a>.</p>
+          </article>
+        </div>
+        <figure class="story__photo" data-reveal>
+          <img src="/img/tote.webp" alt="Tomi Cranberry and Orange cans tucked in a blue tote bag beside the tomi logo" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────────── PARTNERS ───────────── -->
+    <section class="partners" id="partners">
+      <div class="partners__card glass-light" data-reveal>
+        <div>
+          <p class="eyebrow">Partners &amp; stockists</p>
+          <h2>Bring Tomi to <em>your shelf.</em></h2>
+          <p>Retailers, event organisers and venues — partner with Tomi for stock, activations and collaborations. Send us a message and the team will get back to you.</p>
+        </div>
+        <div class="partners__actions">
+          <a class="btn btn--light" href="https://ig.me/m/tomi.juice" target="_blank" rel="noopener">Become a partner</a>
+          <a class="btn btn--ghost" href="https://qrco.de/bcZr88" target="_blank" rel="noopener">Official links</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── INSTAGRAM ───────────── -->
+    <section class="gallery" id="gallery">
+      <header class="section-head section-head--row" data-reveal>
+        <div>
+          <p class="eyebrow">On Instagram</p>
+          <h2>@tomi.juice</h2>
+        </div>
+        <a class="btn btn--dark" href="https://www.instagram.com/tomi.juice/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </header>
+      <div class="gallery__grid" data-gallery></div>
+    </section>
+
+    <!-- ───────────── ORDER ───────────── -->
+    <section class="order" id="order">
+      <div class="order__inner">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Order</p>
+          <h2>Build your <em>Tomi mix.</em></h2>
+          <p>Pick your flavours and quantities, then send the order straight to the Tomi team on Instagram. Pricing and delivery are confirmed in the chat.</p>
+        </header>
+        <form class="order__panel glass-light" data-order novalidate>
+          <div class="order__rows" data-order-rows></div>
+          <div class="order__summary">
+            <p><strong data-order-total>0</strong> cans selected</p>
+            <button class="btn btn--brand" type="submit" data-order-send disabled>Send order via Instagram</button>
+            <p class="order__note" data-order-note role="status" aria-live="polite">Your order summary is copied to the clipboard so you can paste it in the DM.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__pour">
+      <p class="footer__pour-text">Pour yourself some <em>#tomitime</em></p>
+    </div>
+    <div class="footer__top">
+      <img src="/img/tomi-logo.webp" alt="tomi" width="140" height="82" loading="lazy" />
+      <p class="footer__tag">Fresh vibes. Fresh flavours. <span>#tomitime</span></p>
+    </div>
+    <div class="footer__cols">
+      <nav aria-label="Footer">
+        <a href="#flavours">Flavours</a><a href="#story">Story</a><a href="#gallery">Gallery</a><a href="#order">Order</a>
+      </nav>
+      <nav aria-label="Social">
+        <a href="https://www.instagram.com/tomi.juice/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://qrco.de/bcZr88" target="_blank" rel="noopener">Official links</a>
+      </nav>
+    </div>
+    <p class="footer__legal">© <span data-year></span> Tomi Juice. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
